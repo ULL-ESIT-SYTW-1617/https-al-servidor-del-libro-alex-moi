@@ -1,46 +1,59 @@
 {
-<<<<<<< HEAD
   "_args": [
     [
       "gitbook-start-iaas-https-alex-moi",
       "/home/usuario"
+    ],
+    [
+      {
+        "raw": "gitbook-start-iaas-https-alex-moi",
+        "scope": null,
+        "escapedName": "gitbook-start-iaas-https-alex-moi",
+        "name": "gitbook-start-iaas-https-alex-moi",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/home/ubuntu/workspace/prueba"
     ]
   ],
-  "_from": "gitbook-start-iaas-https-alex-moi@latest",
-  "_id": "gitbook-start-iaas-https-alex-moi@0.0.1",
+  "_from": "gitbook-start-iaas-https-alex-moi",
+  "_id": "gitbook-start-iaas-https-alex-moi@0.0.2",
   "_inCache": true,
   "_installable": true,
   "_location": "/gitbook-start-iaas-https-alex-moi",
-  "_nodeVersion": "4.6.1",
+  "_nodeVersion": "4.2.6",
   "_npmOperationalInternal": {
     "host": "packages-12-west.internal.npmjs.com",
-    "tmp": "tmp/gitbook-start-iaas-https-alex-moi-0.0.1.tgz_1480610999071_0.48215639241971076"
+    "tmp": "tmp/gitbook-start-iaas-https-alex-moi-0.0.2.tgz_1480615928572_0.16302996897138655"
   },
   "_npmUser": {
-    "email": "alu0100782851@ull.edu.es",
-    "name": "alu0100782851"
+    "name": "alu0100782851",
+    "email": "alu0100782851@ull.edu.es"
   },
-  "_npmVersion": "4.0.3",
+  "_npmVersion": "3.5.2",
   "_phantomChildren": {},
   "_requested": {
-    "name": "gitbook-start-iaas-https-alex-moi",
     "raw": "gitbook-start-iaas-https-alex-moi",
-    "rawSpec": "",
     "scope": null,
+    "escapedName": "gitbook-start-iaas-https-alex-moi",
+    "name": "gitbook-start-iaas-https-alex-moi",
+    "rawSpec": "",
     "spec": "latest",
     "type": "tag"
   },
   "_requiredBy": [
+    "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/gitbook-start-iaas-https-alex-moi/-/gitbook-start-iaas-https-alex-moi-0.0.1.tgz",
-  "_shasum": "ce488c440b693859bb0131cd09b7adca203b9319",
+  "_resolved": "https://registry.npmjs.org/gitbook-start-iaas-https-alex-moi/-/gitbook-start-iaas-https-alex-moi-0.0.2.tgz",
+  "_shasum": "1178488a67a64497d49d9c7aee5f422582e94093",
   "_shrinkwrap": null,
   "_spec": "gitbook-start-iaas-https-alex-moi",
-  "_where": "/home/usuario",
+  "_where": "/home/ubuntu/workspace/prueba",
   "author": {
-    "email": "alu0100782851@ull.edu.es",
     "name": "Moises Yanes Carballo",
+    "email": "alu0100782851@ull.edu.es",
     "url": "http://alu0100782851.github.io/"
   },
   "bin": {
@@ -49,29 +62,6 @@
   "bugs": {
     "url": "https://github.com/ULL-ESIT-SYTW-1617/https-al-servidor-del-libro-alex-moi.git/issues"
   },
-=======
-  "name": "gitbook-start-iaas-https-alex-moi",
-  "version": "0.0.0",
-  "description": "Plugin deploy iaas bbdd",
-  "main": "gitbook-start-iaas-https.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ULL-ESIT-SYTW-1617/https-al-servidor-del-libro-alex-moi.git",
-    "wiki": "https://github.com/ULL-ESIT-SYTW-1617/https-al-servidor-del-libro-alex-moi.wiki.git"
-  },
-  "keywords": [
-    "gitbook",
-    "npm package"
-  ],
-  "author": {
-    "name": "Moises Yanes Carballo",
-    "email": "alu0100782851@ull.edu.es",
-    "url": "http://alu0100782851.github.io/"
-  },
->>>>>>> a0c569242a160133b1bfd4eb08f9dba75d879c0d
   "contributors": [
     {
       "name": "Alexander Cole Mora",
@@ -79,17 +69,6 @@
       "url": "http://alu0100767421.github.io/"
     }
   ],
-<<<<<<< HEAD
-=======
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ULL-ESIT-SYTW-1617/https-al-servidor-del-libro-alex-moi.git/issues"
-  },
-  "bin": {
-    "gitbook-start-iaas-https": "./gitbook-start-iaas-https.js"
-  },
-  "homepage": "https://github.com/ULL-ESIT-SYTW-1617/https-al-servidor-del-libro-alex-moi.git#readme",
->>>>>>> a0c569242a160133b1bfd4eb08f9dba75d879c0d
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.15.2",
@@ -116,29 +95,22 @@
     "octonode": "^0.7.6",
     "passport": "^0.3.2",
     "passport-github": "^1.1.0",
-<<<<<<< HEAD
     "passport-local": "^1.0.0",
-=======
->>>>>>> a0c569242a160133b1bfd4eb08f9dba75d879c0d
     "path": "^0.12.7",
     "prompt": "^1.0.0",
     "simple-git": "^1.51.0"
   },
-<<<<<<< HEAD
   "description": "Plugin deploy iaas bbdd",
-=======
->>>>>>> a0c569242a160133b1bfd4eb08f9dba75d879c0d
   "devDependencies": {
     "child-process": "^1.0.2",
     "child_process": "^1.0.2",
     "gitbook-cli": "^2.3.0",
     "gulp-shell": "^0.5.2"
-<<<<<<< HEAD
   },
   "directories": {},
   "dist": {
-    "shasum": "ce488c440b693859bb0131cd09b7adca203b9319",
-    "tarball": "https://registry.npmjs.org/gitbook-start-iaas-https-alex-moi/-/gitbook-start-iaas-https-alex-moi-0.0.1.tgz"
+    "shasum": "1178488a67a64497d49d9c7aee5f422582e94093",
+    "tarball": "https://registry.npmjs.org/gitbook-start-iaas-https-alex-moi/-/gitbook-start-iaas-https-alex-moi-0.0.2.tgz"
   },
   "gitHead": "a0c569242a160133b1bfd4eb08f9dba75d879c0d",
   "homepage": "https://github.com/ULL-ESIT-SYTW-1617/https-al-servidor-del-libro-alex-moi.git#readme",
@@ -167,7 +139,4 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "version": "0.0.2"
-=======
-  }
->>>>>>> a0c569242a160133b1bfd4eb08f9dba75d879c0d
 }

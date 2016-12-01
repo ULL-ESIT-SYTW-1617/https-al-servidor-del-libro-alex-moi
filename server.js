@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 var port     = 3101;
 var express  = require("express");
 var app      = express();
@@ -7,12 +6,6 @@ var fs = require("fs");
 var https = require('https');
 
 
-=======
-var port     = process.env.PORT || 8080;
-var express  = require("express");
-var app      = express();
-
->>>>>>> a0c569242a160133b1bfd4eb08f9dba75d879c0d
 var passport = require('passport');
 var mongoose = require('mongoose');
 var flash    = require('connect-flash');
@@ -61,7 +54,6 @@ app.get('*', loginin('/login'), express.static('gh-pages'));
 app.use((req, res) => res.render('error', {error: 'No te olvides de publicar el libro!!!!'}));
 
 
-<<<<<<< HEAD
 // HTTPS
 var secureServer = https.createServer({
     key: fs.readFileSync('private.key'),
@@ -95,15 +87,6 @@ https.createServer({
 }, app).listen(55555);
 */
 
-=======
-
-
-
-
-app.listen(port);
-
-console.log('The magic happens on port localhost:' + port);
->>>>>>> a0c569242a160133b1bfd4eb08f9dba75d879c0d
 
 
 
