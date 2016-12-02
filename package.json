@@ -1,66 +1,24 @@
 {
-  "_args": [
-    [
-      "gitbook-start-iaas-https-alex-moi",
-      "/home/usuario"
-    ],
-    [
-      {
-        "raw": "gitbook-start-iaas-https-alex-moi",
-        "scope": null,
-        "escapedName": "gitbook-start-iaas-https-alex-moi",
-        "name": "gitbook-start-iaas-https-alex-moi",
-        "rawSpec": "",
-        "spec": "latest",
-        "type": "tag"
-      },
-      "/home/ubuntu/workspace/prueba"
-    ]
+  "name": "gitbook-start-iaas-https-alex-moi",
+  "version": "0.0.3",
+  "description": "Plugin deploy iaas https",
+  "main": "gitbook-start-iaas-https.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ULL-ESIT-SYTW-1617/https-al-servidor-del-libro-alex-moi.git",
+    "wiki": "https://github.com/ULL-ESIT-SYTW-1617/https-al-servidor-del-libro-alex-moi.wiki.git"
+  },
+  "keywords": [
+    "gitbook",
+    "npm package"
   ],
-  "_from": "gitbook-start-iaas-https-alex-moi",
-  "_id": "gitbook-start-iaas-https-alex-moi@0.0.2",
-  "_inCache": true,
-  "_installable": true,
-  "_location": "/gitbook-start-iaas-https-alex-moi",
-  "_nodeVersion": "4.2.6",
-  "_npmOperationalInternal": {
-    "host": "packages-12-west.internal.npmjs.com",
-    "tmp": "tmp/gitbook-start-iaas-https-alex-moi-0.0.2.tgz_1480615928572_0.16302996897138655"
-  },
-  "_npmUser": {
-    "name": "alu0100782851",
-    "email": "alu0100782851@ull.edu.es"
-  },
-  "_npmVersion": "3.5.2",
-  "_phantomChildren": {},
-  "_requested": {
-    "raw": "gitbook-start-iaas-https-alex-moi",
-    "scope": null,
-    "escapedName": "gitbook-start-iaas-https-alex-moi",
-    "name": "gitbook-start-iaas-https-alex-moi",
-    "rawSpec": "",
-    "spec": "latest",
-    "type": "tag"
-  },
-  "_requiredBy": [
-    "#USER",
-    "/"
-  ],
-  "_resolved": "https://registry.npmjs.org/gitbook-start-iaas-https-alex-moi/-/gitbook-start-iaas-https-alex-moi-0.0.2.tgz",
-  "_shasum": "1178488a67a64497d49d9c7aee5f422582e94093",
-  "_shrinkwrap": null,
-  "_spec": "gitbook-start-iaas-https-alex-moi",
-  "_where": "/home/ubuntu/workspace/prueba",
   "author": {
     "name": "Moises Yanes Carballo",
     "email": "alu0100782851@ull.edu.es",
     "url": "http://alu0100782851.github.io/"
-  },
-  "bin": {
-    "gitbook-start-iaas-https": "./gitbook-start-iaas-https.js"
-  },
-  "bugs": {
-    "url": "https://github.com/ULL-ESIT-SYTW-1617/https-al-servidor-del-libro-alex-moi.git/issues"
   },
   "contributors": [
     {
@@ -69,6 +27,14 @@
       "url": "http://alu0100767421.github.io/"
     }
   ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ULL-ESIT-SYTW-1617/https-al-servidor-del-libro-alex-moi.git/issues"
+  },
+  "bin": {
+    "gitbook-start-iaas-https": "./gitbook-start-iaas-https.js"
+  },
+  "homepage": "https://github.com/ULL-ESIT-SYTW-1617/https-al-servidor-del-libro-alex-moi.git#readme",
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.15.2",
@@ -96,47 +62,15 @@
     "passport": "^0.3.2",
     "passport-github": "^1.1.0",
     "passport-local": "^1.0.0",
+    "passport-strategy": "^1.0.0",
     "path": "^0.12.7",
     "prompt": "^1.0.0",
     "simple-git": "^1.51.0"
   },
-  "description": "Plugin deploy iaas bbdd",
   "devDependencies": {
     "child-process": "^1.0.2",
     "child_process": "^1.0.2",
     "gitbook-cli": "^2.3.0",
     "gulp-shell": "^0.5.2"
-  },
-  "directories": {},
-  "dist": {
-    "shasum": "1178488a67a64497d49d9c7aee5f422582e94093",
-    "tarball": "https://registry.npmjs.org/gitbook-start-iaas-https-alex-moi/-/gitbook-start-iaas-https-alex-moi-0.0.2.tgz"
-  },
-  "gitHead": "a0c569242a160133b1bfd4eb08f9dba75d879c0d",
-  "homepage": "https://github.com/ULL-ESIT-SYTW-1617/https-al-servidor-del-libro-alex-moi.git#readme",
-  "keywords": [
-    "gitbook",
-    "npm package"
-  ],
-  "license": "ISC",
-  "main": "gitbook-start-iaas-https.js",
-  "maintainers": [
-    {
-      "name": "alu0100782851",
-      "email": "alu0100782851@ull.edu.es"
-    }
-  ],
-  "name": "gitbook-start-iaas-https-alex-moi",
-  "optionalDependencies": {},
-  "readme": "ERROR: No README data found!",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ULL-ESIT-SYTW-1617/https-al-servidor-del-libro-alex-moi.git",
-    "wiki": "https://github.com/ULL-ESIT-SYTW-1617/https-al-servidor-del-libro-alex-moi.wiki.git"
-  },
-  "scripts": {
-    "start": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "version": "0.0.2"
+  }
 }
