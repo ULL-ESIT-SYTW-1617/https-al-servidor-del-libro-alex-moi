@@ -1,6 +1,6 @@
 {
-  "name": "gitbook-start-iaas-https-alex-moi",
-  "version": "0.0.3",
+  "name": "gitbook-start-https-alex-moi",
+  "version": "0.0.1",
   "description": "Plugin deploy iaas https",
   "main": "gitbook-start-iaas-https.js",
   "scripts": {
