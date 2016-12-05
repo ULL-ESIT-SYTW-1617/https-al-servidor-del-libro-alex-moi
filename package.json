@@ -1,8 +1,8 @@
 {
   "name": "gitbook-start-https-alex-moi",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Plugin deploy iaas https",
-  "main": "gitbook-start-iaas-https.js",
+  "main": "gitbook-start-https.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -32,7 +32,7 @@
     "url": "https://github.com/ULL-ESIT-SYTW-1617/https-al-servidor-del-libro-alex-moi.git/issues"
   },
   "bin": {
-    "gitbook-start-iaas-https": "./gitbook-start-iaas-https.js"
+    "gitbook-start-iaas-https": "./gitbook-start-https.js"
   },
   "homepage": "https://github.com/ULL-ESIT-SYTW-1617/https-al-servidor-del-libro-alex-moi.git#readme",
   "dependencies": {
