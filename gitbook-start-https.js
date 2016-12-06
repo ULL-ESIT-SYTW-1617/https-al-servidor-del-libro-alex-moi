@@ -5,12 +5,12 @@ var child = require("child_process");
 
 
 function initialize(directorio) {
-    console.log("\n============ INSTALANDO DEPENDENCIAS GITBOOK-START-IAAS-BBDD ============")
+    console.log("\n============ INSTALANDO DEPENDENCIAS GITBOOK-START-HTTPS ============")
     console.log("\nEspere mientras el proceso termina ...")
 
 
-    var contenido='\ngulp.task("deploy-iaas-bbdd", function () {'+ 
-        '\n\tvar iaas_bbdd = require("gitbook-start-iaas-bbdd-alex-moi");'+
+    var contenido='\ngulp.task("deploy-https", function () {'+ 
+        '\n\tvar iaas_bbdd = require("gitbook-start-https-alex-moi");'+
         '\n\tvar url = paquete.repository.url;'+
         '\n\tvar iaas_ip = paquete.iaas.IP;'+
         '\n\tvar iaas_path = paquete.iaas.PATH;'+
@@ -26,37 +26,37 @@ function initialize(directorio) {
             }
         });
             
-        fs.copyFile(path.join(process.cwd(), 'node_modules', 'gitbook-start-iaas-bbdd-alex-moi', 'server.js'), path.join(process.cwd(), 'app.js'), function (err) {
+        fs.copyFile(path.join(process.cwd(), 'node_modules', 'gitbook-start-https-alex-moi', 'server.js'), path.join(process.cwd(), 'app.js'), function (err) {
             if (err) {
                 return console.error(err);
             }
         });
         
-        fs.copyFile(path.join(process.cwd(), 'node_modules', 'gitbook-start-iaas-bbdd-alex-moi', 'mongod'), path.join(process.cwd(), 'mongod'), function (err) {
+        fs.copyFile(path.join(process.cwd(), 'node_modules', 'gitbook-start-https-alex-moi', 'mongod'), path.join(process.cwd(), 'mongod'), function (err) {
             if (err) {
                 return console.error(err);
             }
         });
         
-        fs.copyDir(path.join(process.cwd(), 'node_modules', 'gitbook-start-iaas-bbdd-alex-moi', 'app'), path.join(process.cwd(), 'app'), function (err) {
+        fs.copyDir(path.join(process.cwd(), 'node_modules', 'gitbook-start-https-alex-moi', 'app'), path.join(process.cwd(), 'app'), function (err) {
             if (err) {
                 return console.error(err);
             }
         });
         
-        fs.copyDir(path.join(process.cwd(), 'node_modules', 'gitbook-start-iaas-bbdd-alex-moi', 'config'), path.join(process.cwd(), 'config'), function (err) {
+        fs.copyDir(path.join(process.cwd(), 'node_modules', 'gitbook-start-https-alex-moi', 'config'), path.join(process.cwd(), 'config'), function (err) {
             if (err) {
                 return console.error(err);
             }
         }); 
         
-        fs.copyDir(path.join(process.cwd(), 'node_modules', 'gitbook-start-iaas-bbdd-alex-moi', 'public'), path.join(process.cwd(), 'public'), function (err) {
+        fs.copyDir(path.join(process.cwd(), 'node_modules', 'gitbook-start-https-alex-moi', 'public'), path.join(process.cwd(), 'public'), function (err) {
             if (err) {
                 return console.error(err);
             }
         });         
         
-        fs.copyDir(path.join(process.cwd(), 'node_modules', 'gitbook-start-iaas-bbdd-alex-moi', 'views'), path.join(process.cwd(), 'views'), function (err) {
+        fs.copyDir(path.join(process.cwd(), 'node_modules', 'gitbook-start-https-alex-moi', 'views'), path.join(process.cwd(), 'views'), function (err) {
             if (err) {
                 return console.error(err);
             }

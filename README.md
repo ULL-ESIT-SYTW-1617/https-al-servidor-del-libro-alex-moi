@@ -1,5 +1,5 @@
 
-# Sistemas y Tecnologías Web. Gitbook Start LocalStrategy y MongoDB. Plugin
+# Sistemas y Tecnologías Web. Servidor https. Plugin
 
 Este paquete es un plugin del paquete ```gitbook-start-alex-moi-nitesh```.
 Ofrece la posibilidad de desplegar una aplicación basada en autenticación local mediante el uso de passport y MongoDB, la aplicación tiene como objetivo contener un gitbook al cual solo podrán acceder aquellos usuarios que estén registrados en la misma.
@@ -57,11 +57,13 @@ Una vez hemos realizado los pasos anteriores, es decir, una vez hemos subido nue
  1. npm install -g gitbook-start-alex-moi-nitesh
  2. npm install
  3. gulp build
- 4. gitbook-start-alex-moi-nitesh -d iaas-bbdd
+ 4. gitbook-start-alex-moi-nitesh -d https-bbdd
  5. sudo mkdir -p /data/db/
  6. sudo chown 'id -u' /data/db
- 7. Desde el mismo terminal ejecutar: mongod --dbpath /data/db --smallfiles (véase sección Observaciones)
- 8. Desde otro terminal: gulp deploy-iaas-bbdd
+ 7. openssl req -x509 -newkey rsa:2048 -keyout private.key -out certificate.pem -days 365 (deberá introducir dos veces una contraseña simplemente)
+ 8. openssl rsa -in private.key -out newkey.pem && mv newkey.pem privaye.key
+ 9. Desde el mismo terminal ejecutar: mongod --dbpath /data/db --smallfiles (véase sección Observaciones)
+ 10. Desde otro terminal: gulp deploy-https
 
 #####**Observaciones:** 
 >- Debe tener instalado la base de datos mongoDB en su maquina, en caso contrario siga [estos pasos](http://www.mongodbspain.com/es/2014/08/30/install-mongodb-on-ubuntu-14-04/) (Sólo será necesario realizar los 4 primeros pasos).
