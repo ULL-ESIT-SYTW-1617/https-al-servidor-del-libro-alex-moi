@@ -2,7 +2,7 @@
 # Sistemas y Tecnologías Web. Servidor https. Plugin
 
 Este paquete es un plugin del paquete ```gitbook-start-alex-moi-nitesh```.
-Ofrece la posibilidad de desplegar una aplicación basada en autenticación local mediante el uso de passport y MongoDB, la aplicación tiene como objetivo contener un gitbook al cual solo podrán acceder aquellos usuarios que estén registrados en la misma.
+Ofrece la posibilidad de desplegar una aplicación basada en autenticación local mediante el uso de passport y MongoDB, utilizando certificados de OpenSSL para disponer de un servidor HTTPS, la aplicación tiene como objetivo contener un gitbook al cual solo podrán acceder aquellos usuarios que estén registrados en la misma.
 
 ## Instalación
 
@@ -13,7 +13,7 @@ Para poner en funcionamiento este paquete vaya a la sección de ejecución donde
 
 ## Descripción del paquete
 
-El paquete cuenta con dos métodos, **intialize()** y **deploy()**. El primero, al ser invocado por el paquete principal [gitbook-start-alex-moi-nitesh](https://www.npmjs.com/package/gitbook-start-alex-moi-nitesh) el cual añadirá una tarea gulp al gulpfile.js de la aplicación. Esta tarea se llamará **deploy-iaas-bbdd** e invocará el método **deploy()** que se encargará de arrancar el server en la maquina del iaas.
+El paquete cuenta con dos métodos, **intialize()** y **deploy()**. El primero, al ser invocado por el paquete principal [gitbook-start-alex-moi-nitesh](https://www.npmjs.com/package/gitbook-start-alex-moi-nitesh) el cual añadirá una tarea gulp al gulpfile.js de la aplicación. Esta tarea se llamará **deploy-https** e invocará el método **deploy()** que se encargará de arrancar el server en la maquina del iaas.
 
 
 ### SSH  keys
@@ -57,28 +57,27 @@ Una vez hemos realizado los pasos anteriores, es decir, una vez hemos subido nue
  1. npm install -g gitbook-start-alex-moi-nitesh
  2. npm install
  3. gulp build
- 4. gitbook-start-alex-moi-nitesh -d https-bbdd
+ 4. gitbook-start-alex-moi-nitesh -d https
  5. sudo mkdir -p /data/db/
- 6. sudo chown 'id -u' /data/db
- 7. openssl req -x509 -newkey rsa:2048 -keyout private.key -out certificate.pem -days 365 (deberá introducir dos veces una contraseña simplemente)
- 8. openssl rsa -in private.key -out newkey.pem && mv newkey.pem privaye.key
- 9. Desde el mismo terminal ejecutar: mongod --dbpath /data/db --smallfiles (véase sección Observaciones)
- 10. Desde otro terminal: gulp deploy-https
+ 6. openssl req -x509 -newkey rsa:2048 -keyout private.key -out certificate.pem -days 365 (deberá introducir dos veces una contraseña e información adicional no obligatoria)
+ 7. openssl rsa -in private.key -out newkey.pem && mv newkey.pem private.key
+ 8. Desde el mismo terminal ejecutar: mongod --dbpath /data/db --smallfiles (véase sección Observaciones)
+ 9. Desde otro terminal: gulp deploy-https
 
 #####**Observaciones:** 
 >- Debe tener instalado la base de datos mongoDB en su maquina, en caso contrario siga [estos pasos](http://www.mongodbspain.com/es/2014/08/30/install-mongodb-on-ubuntu-14-04/) (Sólo será necesario realizar los 4 primeros pasos).
 
 
 ##Versiones de los paquetes
-* Paquete principal **gitbook-start-alex-moi-nitesh** versión **v1.2.63**
-* Paquete **gitbook-start-iaas-bbdd-moi** versión **v0.0.13**
+* Paquete principal **gitbook-start-alex-moi-nitesh** versión **v1.2.66**
+* Paquete **gitbook-start-https-alex-moi** versión **v0.0.8**
 
 ## Enlaces importantes
 
-*  [Página en NPM gitbook-start-heroku-localstrategy-alex-moi Plugin](https://www.npmjs.com/package/gitbook-start-heroku-localstrategy-alex-moi)
+*  [Página en NPM gitbook-start-https-alex-moi Plugin](https://www.npmjs.com/package/gitbook-start-https-alex-moi)
 *  [Página en NPM gitbook-start-alex-moi-nitesh](https://www.npmjs.com/package/gitbook-start-alex-moi-nitesh)
-*  [Repositorio GitHub](https://github.com/ULL-ESIT-SYTW-1617/passport-y-localstrategy-alex-moi.git)
-*  [Descripción de la práctica](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/practicas/practicapassportlocal.html)
+*  [Repositorio GitHub](https://github.com/ULL-ESIT-SYTW-1617/https-al-servidor-del-libro-alex-moi.git)
+*  [Descripción de la práctica](https://crguezl.github.io/ull-esit-1617/practicas/practicassl.html)
 *  [Campus Virtual](https://campusvirtual.ull.es/1617/course/view.php?id=1175)
 
 ## Autores

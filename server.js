@@ -1,4 +1,4 @@
-var port     = 443;
+var port     = 8080;
 var express  = require("express");
 var app      = express();
 
@@ -62,36 +62,4 @@ var secureServer = https.createServer({
   .listen(port, function () {
     console.log('Secure Server listening on port ' + port);
 });
-
-
-/*
-app.listen(port);
-
-console.log('The magic happens on port localhost:' + port);*/
-/*
-var fs = require('fs'),
-https = require('https'),
-express = require('express'),
-app = express();
-var port = process.env.PORT || 8080;
-
-app.get('/', function (req, res) {
-  res.header('Content-type', 'text/html');
-  return res.end('<h1>Hello, Secure World!</h1>');
-});
-
-
-https.createServer({
-  key: fs.readFileSync('key.pem'),
-  cert: fs.readFileSync('cert.pem')
-}, app).listen(55555);
-*/
-
-
-
-
-
-
-
-
 
